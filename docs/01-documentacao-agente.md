@@ -5,7 +5,7 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+As pessoas, em geral, tem muita dificuldade de entender e administrar suas finanças. Isso acaba dando prejuízos a longo prazo para o cidadão. Este projeto visa criar um agente de IA que age como educador financeiro e também dá dicas de como administrar suas finanças. Obs.: O agente foca no básico de finanças, não indicando onde ou no quê investir na bolsa de valores e investimentos com moderado risco.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
@@ -15,7 +15,7 @@
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Pessoas que tem pouco conhecimento financeiro e que desejam entender e melhorar suas finanças.
 
 ---
 
@@ -27,12 +27,12 @@
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+Educativo, e consultivo
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Formal e acessível
 
 ### Exemplos de Linguagem
 - Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
@@ -70,12 +70,13 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Agente só responde com base nos dados fornecidos;
+- [ ] Respostas incluem fonte da informação;
+- [ ] Quando não sabe, admite e redireciona;
+- [ ] Não faz recomendações de investimento, apenas informa os tipos de investimentos.
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+* Não acessa dados sensíveis do cliente (bancários ou não);
+* Não sugere investimentos específicos na bolsa de valores.
