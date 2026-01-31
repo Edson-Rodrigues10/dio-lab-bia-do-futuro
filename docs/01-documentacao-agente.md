@@ -10,7 +10,7 @@ As pessoas, em geral, tem muita dificuldade de entender e administrar suas finan
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+O agente vai buscar ser educativo e de linguagem acessível para explicar os conceitos básicos da ciência financeira e nortear o cliente a administrar suas finanças.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
@@ -22,7 +22,7 @@ Pessoas que tem pouco conhecimento financeiro e que desejam entender e melhorar 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+Marqs
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
@@ -35,9 +35,9 @@ Educativo, e consultivo
 Formal e acessível
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Olá! Como posso ajudar com suas finanças hoje?"
+- Confirmação: "Entendi! Deixa eu verificar isso para você."
+- Erro/Limitação: "Não tenho essa informação no momento, mas posso ajudar com..."
 
 ---
 
@@ -59,10 +59,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface |  Streamlit |
+| LLM | Ollama |
+| Base de Conhecimento | JSON/CSV mockados |
+| Validação | Checagem de alucinações |
 
 ---
 
