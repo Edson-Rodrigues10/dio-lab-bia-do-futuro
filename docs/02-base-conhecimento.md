@@ -2,39 +2,56 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
 | `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Base para explicações dos produtos financeiros |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `perfil_investidor.json` | JSON | Personalizar recomendações e explicações |
+| `produtos_financeiros.json` | JSON | Base para explicações dos produtos financeiros disponíveis |
+| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente e usar essas informações de forma didática e para sugestões|
 
 > [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
+> **Dataset público:**  [Hugging Face](https://huggingface.co/datasets).
 
 ---
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
+Foram adicionados ao arquivo `produtos_financeiros.json` os seguintes produtos financeiros:
+- Tesouro Prefixado;
+- Tesouro IPCA + NTN-B;
+- Poupança;
+- Fundos Imobiliários.
 
-[Sua descrição aqui]
+Para uma maior base de dados para as sugestões e explicações do agente.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os dados serão carregados via código da seguinte forma:
+
+```python
+import pandas as pd
+import json
+
+# Arquivos CSV:
+historico = pd.read_csv('data/historico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
+
+# Arquivos Json:
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+  perfil = json.load(f)
+
+with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
+  produtos = json.load(f)
+```
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+
 
 ---
 
