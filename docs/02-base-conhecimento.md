@@ -100,22 +100,118 @@ data,canal,tema,resumo,resolvido
 2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
 2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
 
+
+PRODUTOS FINANCEIROS (data/produtos_financeiros.json):
+[
+  {
+    "nome": "Tesouro Selic",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "100% da Selic",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Reserva de emergência e iniciantes"
+  },
+  {
+    "nome": "Tesouro Prefixado",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "de 13.5% a quase 15% ao ano",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Investidores de perfil conservador que buscam previsibilidade"
+  },
+  {
+    "nome": "Tesouro IPCA + NTN-B",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "IPCA + 6% ao ano",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Ideal para metas de longo prazo e investidores que querem garantir que seu poder de compra não diminua"
+  },
+  {
+    "nome": "CDB Liquidez Diária",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "102% do CDI",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Quem busca segurança com rendimento diário"
+  },
+  {
+    "nome": "LCI/LCA",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "95% do CDI",
+    "aporte_minimo": 1000.00,
+    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+  },
+  {
+    "nome": "Poupança",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "0,5% ao mês + Taxa Referencial (TR) se a Selic for maior que 8.5%; 70% da Selic + TR se a Selic for menor ou igual a 8.5%",
+    "aporte_minimo": 1.00,
+    "indicado_para": "Reserva de emergência e para quem tem o perfil conservador (isento de IR)"
+  },
+  {
+    "nome": "Fundo Multimercado",
+    "categoria": "fundo",
+    "risco": "medio",
+    "rentabilidade": "CDI + 2%",
+    "aporte_minimo": 500.00,
+    "indicado_para": "Perfil moderado que busca diversificação"
+  },
+  {
+    "nome": "Fundos Imobiliários (FIIs)",
+    "categoria": "fundo",
+    "risco": "medio",
+    "rentabilidade": "0.5% a 0.8% ao dia",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil moderado que busca diversificação e fluxo mensal de caixa"
+  },
+  {
+    "nome": "Fundo de Ações",
+    "categoria": "fundo",
+    "risco": "alto",
+    "rentabilidade": "Variável",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil arrojado com foco no longo prazo"
+  }
+]
+
 ```
 
 ---
 
 ## Exemplo de Contexto Montado
 
-> Mostre um exemplo de como os dados são formatados para o agente.
+O exemplo abaixo se baseia nos dados fornecidos nos arquivos do diretório `data`, fornecendo um "resumo" das informações principais, para economizar tokens, mas mantendo a coerência e integridade das informações.
 
-```
+```text
 Dados do Cliente:
-- Nome: João Silva
+- Nome: Aldair Sobrenome
 - Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Objetivo: Entrada em Apartamento
+- Salário: R$ 7.000,00
+- Saldo disponível: R$ 30.000.00 (meta: R$ 62.000,00)
 
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
+Resumo de Gastos:
+- Moradia: R$ 1.680,00
+- Alimentação: R$ 740,00
+- Transporte: R$ 295,00
+- Saúde: R$ 188,00
+- Lazer: R$ 55,90
+- Total: R$ 2.958,90
+
+Produtos Disponíveis para Explicação e Possível Indicação:
+- Tesouro Selic (Risco baixo)
+- Tesouro Prefixado (Risco baixo)
+- Tesouro IPCA + NTN (Risco baixo)
+- CDB Liquidez diária (Risco baixo)
+- LCI/LCA (Risco baixo)
+- Poupança (Risco baixo)
+- Fundo Multimercado (Risco médio)
+- Fundo Imobiliário - FII (Risco médio)
+- Fundo de Ações (Risco alto)
+
+
 ...
 ```
