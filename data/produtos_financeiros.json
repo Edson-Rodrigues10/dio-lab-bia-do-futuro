@@ -8,6 +8,22 @@
     "indicado_para": "Reserva de emergência e iniciantes"
   },
   {
+    "nome": "Tesouro Prefixado",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "de 13.5% a quase 15% ao ano",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Investidores de perfil conservador que buscam previsibilidade"
+  },
+  {
+    "nome": "Tesouro IPCA + NTN-B",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "IPCA + 6% ao ano",
+    "aporte_minimo": 30.00,
+    "indicado_para": "Ideal para metas de longo prazo e investidores que querem garantir que seu poder de compra não diminua"
+  },
+  {
     "nome": "CDB Liquidez Diária",
     "categoria": "renda_fixa",
     "risco": "baixo",
@@ -24,12 +40,28 @@
     "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
   },
   {
+    "nome": "Poupança",
+    "categoria": "renda_fixa",
+    "risco": "baixo",
+    "rentabilidade": "0,5% ao mês + Taxa Referencial (TR) se a Selic for maior que 8.5%; 70% da Selic + TR se a Selic for menor ou igual a 8.5%",
+    "aporte_minimo": 1.00,
+    "indicado_para": "Reserva de emergência e para quem tem o perfil conservador (isento de IR)"
+  },
+  {
     "nome": "Fundo Multimercado",
     "categoria": "fundo",
     "risco": "medio",
     "rentabilidade": "CDI + 2%",
     "aporte_minimo": 500.00,
     "indicado_para": "Perfil moderado que busca diversificação"
+  },
+  {
+    "nome": "Fundos Imobiliários (FIIs)",
+    "categoria": "fundo",
+    "risco": "medio",
+    "rentabilidade": "0.5% a 0.8% ao dia",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil moderado que busca diversificação e fluxo mensal de caixa"
   },
   {
     "nome": "Fundo de Ações",
